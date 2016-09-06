@@ -1,0 +1,33 @@
+/**
+* @Author: Aswin Mohan <aswinmohan>
+* @Date:   2016-09-03T22:11:03+05:30
+* @Last modified by:   aswinmohan
+* @Last modified time: 2016-09-03T22:46:03+05:30
+*/
+
+* {
+    font-family: "inconsolata";
+}
+
+.container {
+    width: 80%;
+    margin: 0px 10%;
+    text-align: center;
+}
+
+#main-nav {
+    margin: 0 auto;   
+}
+
+.pixel-box {
+    float: left;
+}
+
+button{
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: #ecf0f1;
+    border:none;
+    border-radius: 3px;
+}
