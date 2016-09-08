@@ -23,46 +23,46 @@ describe "#translate" do
 
   it "translates a word beginning with a vowel" do
     s = translate("apple")
-    expect(s).to eq("appleay")
+    s.should == "appleay"
   end
 
   it "translates a word beginning with a consonant" do
     s = translate("banana")
-    expect(s).to eq("ananabay")
+    s.should == "ananabay"
   end
 
   it "translates a word beginning with two consonants" do
     s = translate("cherry")
-    expect(s).to eq("errychay")
+    s.should == "errychay"
   end
 
   it "translates two words" do
     s = translate("eat pie")
-    expect(s).to eq("eatay iepay")
+    s.should == "eatay iepay"
   end
 
   it "translates a word beginning with three consonants" do
-    expect(translate("three")).to eq("eethray")
+    translate("three").should == "eethray"
   end
 
   it "counts 'sch' as a single phoneme" do
     s = translate("school")
-    expect(s).to eq("oolschay")
+    s.should == "oolschay"
   end
 
   it "counts 'qu' as a single phoneme" do
     s = translate("quiet")
-    expect(s).to eq("ietquay")
+    s.should == "ietquay"
   end
 
   it "counts 'qu' as a consonant even when it's preceded by a consonant" do
     s = translate("square")
-    expect(s).to eq("aresquay")
+    s.should == "aresquay"
   end
 
   it "translates many words" do
     s = translate("the quick brown fox")
-    expect(s).to eq("ethay ickquay ownbray oxfay")
+    s.should == "ethay ickquay ownbray oxfay"
   end
 
   # Test-driving bonus:
