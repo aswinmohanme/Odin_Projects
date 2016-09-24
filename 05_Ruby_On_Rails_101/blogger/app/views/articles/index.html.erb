@@ -1,10 +1,17 @@
+<!--
+@Author: Aswin Mohan <aswinmohan>
+@Date:   2016-09-24T22:15:45+05:30
+@Last modified by:   aswinmohan
+@Last modified time: 2016-09-24T22:21:58+05:30
+-->
 
-<h1>All Articles List</h1>
+
+<h1>All Articles</h1>
 
 <ul id="articles">
-    <% @articles.do each |article| %>
-        <li> 
-            <%= article.title %>
-        </li>
-    <% end %>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title , article_path(article)%>
+    </li>
+  <% end %>
 </ul>
