@@ -2,7 +2,7 @@
 @Author: Aswin Mohan <aswinmohan>
 @Date:   2016-09-24T22:15:45+05:30
 @Last modified by:   aswinmohan
-@Last modified time: 2016-09-24T22:21:58+05:30
+@Last modified time: 2016-09-25T07:20:28+05:30
 -->
 
 
@@ -11,7 +11,9 @@
 <ul id="articles">
   <% @articles.each do |article| %>
     <li>
-      <%= link_to article.title , article_path(article)%>
+        <%= link_to article.title , article_path(article)%>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "Create a New Article " , new_article_path , class: 'new_article' %>
